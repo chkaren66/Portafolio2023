@@ -105,44 +105,48 @@ span{
 
 /* About Me */
 .containers.ctn-aboutme{
+    width: 100%;
     height: 100vh;
-    /* padding: 3rem; */
+    padding: 5rem;
     
-
-
 }
 .ctn-aboutme{
     display: flex;
-    /* flex-wrap: wrap; */
     justify-content: center;
     align-items: center;
-
 }
 .ctn-aboutme-imagen{
+   
   
+  width: 50%;
   
 }
+.ctn-aboutme-imagen img{
+   border-radius: 18px; 
+  }
 .ctn-aboutme-descripcion{
-    margin: 1rem;
+   
+    width: 50%;
     
 }
 .ctn-aboutme-descripcion p{
-    margin: 1rem;
     
 }
 .ctn-aboutme-descripcion a{
     text-decoration: none;
+/* 
     color: var(--color-light-blue);
-    padding: 1rem 1rem 1rem 2rem;
+    margin-top: 2rem;
+    padding: 1rem;
     border-bottom: 1px solid var(--color-light-blue);
-    
+     */
 }
-.foto-yo{
+/* .foto-yo{
    
     width: 70%;
    
     height: auto;
-}
+} */
 
 /* CTN proyects.. */
 .containers.ctn-proyects{
@@ -156,8 +160,8 @@ span{
    
 }
 .containers.ctn-proyects .proyects-card{
-    max-width: 400px;
-    width: 60%;
+    max-width: 700px;
+    width: 80%;
     margin: 6rem auto;
     background: linear-gradient(180deg,rgba(35,37,49,.5),rgba(15,15,24,.5));
     border: 0.1rem solid #20222e;
@@ -165,14 +169,17 @@ span{
     /* backdrop-filter: blur(54px); */
     padding: 2rem;
     display: flex;
-    flex-direction: column;
+    align-items: center;
+    /* flex-direction: column; */
     
     
   
 }
 .proyects-card .card-imagen {
  
-  width: 100%;
+  /* width: 100%; */
+  height: 100%;
+  
 }
 .proyects-card .card-imagen img{ 
     width: 100%;
@@ -183,18 +190,21 @@ span{
     object-fit: cover; */
 }
 .proyects-card .card-informacion{ 
-    margin: 1rem;
+    margin-left: 2rem;
+   
+    display: flex;
+    flex-direction: column;
   
 }
 .proyects-card .card-informacion h2{ 
-   margin-top: 2rem;
-   margin-bottom: 2rem;
+   /* margin-top: 2rem; */
+   margin-bottom: 1rem; 
    
 }
 .proyects-card .card-informacion p{ 
-   
+    font-size: 14px;
     color: var(--color-gray);
-    margin-bottom: 20px;
+    margin-bottom: 1rem;
  }
  .proyects-card .card-informacion a{ 
     
