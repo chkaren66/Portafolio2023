@@ -1,0 +1,334 @@
+:root{
+    --color-main: #3c3d59;
+    --color-second: #6872a6;
+    --color-threth:#ffbec0;
+}
+body{
+    padding: 0;
+    margin: 0;
+    /* background-color: #0F172A; */
+    box-sizing: border-box;
+    
+}
+main{
+    color: white;
+}
+header{
+    /* 
+     */
+    font-family: 'Lato', sans-serif;
+    padding: 20px 30px;
+    background-color: var(--color-threth);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+   
+    /* left: 0; */
+    
+}
+header a{
+    text-decoration: none;
+    color: #0F172A;
+   
+}
+header .logo{
+    font-weight: bold;
+    color: #ffffff;
+}
+header nav{
+    padding-right: 30px;
+}
+header nav a {
+    padding: 10px 20px;
+   
+}
+nav a:hover{
+    background-color: #ec6d86;
+    color: white;
+}
+nav a:active{
+    background-color: rgb(44, 40, 99);
+   }
+
+/*    Section presentacion */
+.presentacion{
+    height: 100vh;
+    background-image: url(/Images/imagen-paisaje.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+   
+    
+}
+.presentacion h1{
+    color:#0F172A;
+    font-size: 60px;
+    font-family: 'Roboto Slab', serif;
+    letter-spacing: 6px;
+    text-shadow: 2px 2px 3px white;
+    
+   
+}
+.presentacion h2{
+    font-size: 20px;
+    font-family: 'Lato', sans-serif;
+    letter-spacing: 5px;
+}
+
+/*     About me      */
+
+
+
+/* ------------------- */
+
+.tarjeta{
+    margin: 30px;
+    height: 200px;
+    width: 200px;
+    background-color: #ffffff;
+    border-radius: 50%;
+   
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.tarjeta::before{
+    content: "";
+    position: absolute;
+    height: 200px;
+    width: 200px;
+    background-image: conic-gradient(var(--color-threth) 20deg, transparent 120deg);
+    animation: rotar 5s linear infinite;
+}
+
+@keyframes rotar{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(-360deg);
+    }
+}
+
+.tarjeta::after{
+    content: "";
+    position: absolute;
+    height: 190px;
+    width: 190px;
+    background-image: url(/Images/yo.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+   
+}
+
+
+/* -------------------------- */
+.about{
+   padding: 40px;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   font-family: 'Roboto Slab', serif;
+   background-color: white;
+   color: black;
+}
+.about h2{
+    letter-spacing: 7px;
+}
+.about img{
+    max-width: 200px;
+    border-radius: 50%;
+    margin: 50px;
+    /* border: 5px dotted var(--color-second);
+    outline: 8px dotted var(--color-second); */
+  
+  
+}
+
+
+.about p{
+    max-width: 600px;
+    text-align: center;
+    color: black;
+    font-weight: 800;
+}
+.about span{
+    color: #ec6d86;
+}
+/*    Proyects     */
+.proyects{
+    background-color: white;
+    padding: 50px;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.proyects h2{
+    text-align: center;
+    color: #0F172A;
+    font-family: 'Roboto Slab', serif;
+    letter-spacing: 7px;
+    
+}
+.proyect{
+    margin: 30px;
+    font-family: 'Lato', sans-serif;
+    max-width: 600px;
+  /* border: 1px solid var(--color-main); */
+  padding: 20px;
+  border-radius: 16px;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+  
+}
+.proyect img{
+  height: 250px;
+  width: 450px;
+  object-fit: cover;
+}
+.proyect a{
+
+ text-decoration: none;
+ color: #ffffff;  
+ 
+
+
+}
+.proyect .options{
+    display: flex;
+    /* flex-direction: row; */
+    justify-content: space-between;
+   
+}
+
+.options div{
+  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.proyect ul{
+    padding: 0px;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+   
+   
+   
+}
+.proyect .options a{
+    padding:5px 20px;
+   
+    color: var(--color-main);
+    border: 1px solid gray;
+    border-radius: 16px;
+    color: gray;
+    font-weight: 700;
+    cursor: pointer;
+    -webkit-transition: ease-out 0.4s;
+    -moz-transition: ease-out 0.4s;
+    transition: ease-out 0.4s;
+   
+  }
+.options a:hover{
+    background-color: #ec6d86;
+    color: white;
+    border-color: #ec6d86;
+}
+.proyect li{
+    padding: 5px 20px;
+    margin-left: 5px;
+    background-color: var(--color-threth);
+    opacity: 0.8;
+    border: 1px solid var(--color-threth);
+    border-radius: 16px;
+    color: #f34366;
+    font-weight: 700;
+    font-size: 12px;
+}
+
+/*     Contact     */
+.contact{
+    height: 80vh;
+    background-color: var(--color-main);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Roboto Slab', serif;
+}
+.contact i{
+    font-size: 50px;
+   height: 50px;
+   width: auto;
+   
+}
+.contact h2{
+  
+    letter-spacing: 7px;
+   
+}
+.contact p{
+
+}
+.contact a{
+    text-decoration: none;
+    color: #ec6d86;
+    font-weight: 800;
+    border: 1px solid #ec6d86;
+    padding: 12px 24px;
+    border-radius: 8px;
+    background-color: white;
+    cursor: pointer;
+    -webkit-transition: ease-out 0.4s;
+    -moz-transition: ease-out 0.4s;
+    transition: ease-out 0.4s;
+    
+}
+.contact a:hover{
+    background-color: #ec6d86;
+    color: white;
+}
+
+/*     Footer     */
+footer{
+    background-color:white;
+    height: 30vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: black;
+}
+footer div{
+    padding: 30px;
+}
+footer a{
+   
+    text-decoration: none;
+    padding: 10px;
+    border: 1px solid var(--color-threth);
+    border-radius: 8px;
+    display: inline-block;
+}
+footer i{
+    
+    color:var(--color-threth)!important;
+    font-size: 30px;
+}
+footer a:hover{
+    background-color: var(--color-main);
+    border: 1px solid var(--color-main);
+    
+}
