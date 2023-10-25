@@ -31,9 +31,11 @@ header a{
     color: #0F172A;
    
 }
-header .logo{
-    font-weight: bold;
-    color: #ffffff;
+header .icon-menu{
+    display: none;
+}
+header .logo img{
+    width: 40px;
 }
 header nav{
     padding-right: 30px;
@@ -184,11 +186,12 @@ nav a:active{
     margin: 30px;
     font-family: 'Lato', sans-serif;
     max-width: 600px;
-  /* border: 1px solid var(--color-main); */
   padding: 20px;
   border-radius: 16px;
   box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
   
+ 
+
 }
 .proyect img{
   height: 250px;
@@ -279,9 +282,6 @@ nav a:active{
     letter-spacing: 7px;
    
 }
-.contact p{
-
-}
 .contact a{
     text-decoration: none;
     color: #ec6d86;
@@ -331,4 +331,63 @@ footer a:hover{
     background-color: var(--color-main);
     border: 1px solid var(--color-main);
     
+}
+
+
+/* Responsive design */
+
+@media screen and (max-width: 768px) {
+    header{
+       display: block;
+       width: 100%;
+      
+        
+    }
+    header a{
+        display: inline;
+       
+       
+    }
+    header .icon-menu{
+        margin: 20px;
+        font-size: 23px;
+        position: absolute;
+        top: 0;
+        right: 0;
+        display: inline;
+       
+    }
+    header .logo img{
+        
+    }
+    header nav{
+        
+        
+       
+    }
+    header nav.active{
+       margin: 10px;
+    }
+    header nav.inactive{
+        display: none;
+        
+    }
+    header nav a {
+       
+        display: block;
+        text-align: center;
+       
+       
+    }
+    header nav a{
+
+    }
+    nav a:hover{
+        background-color:var(--color-threth);
+        border-bottom: 1px solid #ec6d86;
+        color: #ec6d86;
+    }
+    nav a:active{
+        background-color: rgb(44, 40, 99);
+       }
 }
