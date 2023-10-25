@@ -1,59 +1,67 @@
-:root{
+:root {
     --color-main: #3c3d59;
     --color-second: #6872a6;
-    --color-threth:#ffbec0;
+    --color-threth: #ffbec0;
 }
-body{
+
+body {
     padding: 0;
     margin: 0;
     /* background-color: #0F172A; */
     box-sizing: border-box;
-    
+
 }
-main{
+
+main {
     color: white;
 }
-header{
-    /* 
-     */
+
+header {
+    
     font-family: 'Lato', sans-serif;
     padding: 20px 30px;
     background-color: var(--color-threth);
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-   
-    /* left: 0; */
-    
+
 }
-header a{
+
+header a {
     text-decoration: none;
     color: #0F172A;
-   
+
 }
-header .icon-menu{
+
+header .icon-menu {
     display: none;
 }
-header .logo img{
+
+header .logo img {
     width: 40px;
 }
-header nav{
+
+header nav {
     padding-right: 30px;
 }
+
 header nav a {
     padding: 10px 20px;
-   
+
 }
-nav a:hover{
+
+nav a:hover {
     background-color: #ec6d86;
     color: white;
 }
-nav a:active{
+
+nav a:active {
     background-color: rgb(44, 40, 99);
-   }
+}
 
 /*    Section presentacion */
-.presentacion{
+.presentacion {
+   
     height: 100vh;
     background-image: url(/Images/imagen-paisaje.png);
     background-size: cover;
@@ -63,19 +71,21 @@ nav a:active{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-   
-    
+
+
 }
-.presentacion h1{
-    color:#0F172A;
+
+.presentacion h1 {
+    color: #0F172A;
     font-size: 60px;
     font-family: 'Roboto Slab', serif;
     letter-spacing: 6px;
     text-shadow: 2px 2px 3px white;
-    
-   
+
+
 }
-.presentacion h2{
+
+.presentacion h2 {
     font-size: 20px;
     font-family: 'Lato', sans-serif;
     letter-spacing: 5px;
@@ -87,13 +97,13 @@ nav a:active{
 
 /* ------------------- */
 
-.tarjeta{
+.tarjeta {
     margin: 30px;
     height: 200px;
     width: 200px;
     background-color: #ffffff;
     border-radius: 50%;
-   
+
     position: relative;
     overflow: hidden;
     display: flex;
@@ -101,7 +111,7 @@ nav a:active{
     justify-content: center;
 }
 
-.tarjeta::before{
+.tarjeta::before {
     content: "";
     position: absolute;
     height: 200px;
@@ -110,16 +120,17 @@ nav a:active{
     animation: rotar 5s linear infinite;
 }
 
-@keyframes rotar{
-    from{
+@keyframes rotar {
+    from {
         transform: rotate(0deg);
     }
-    to{
+
+    to {
         transform: rotate(-360deg);
     }
 }
 
-.tarjeta::after{
+.tarjeta::after {
     content: "";
     position: absolute;
     height: 190px;
@@ -128,111 +139,114 @@ nav a:active{
     background-size: cover;
     background-repeat: no-repeat;
     border-radius: 50%;
-   
+
 }
 
 
 /* -------------------------- */
-.about{
-   padding: 40px;
-   display: flex;
-   flex-direction: column;
-   align-items: center;
-   font-family: 'Roboto Slab', serif;
-   background-color: white;
-   color: black;
+.about {
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Roboto Slab', serif;
+    background-color: white;
+    color: black;
 }
-.about h2{
+
+.about h2 {
     letter-spacing: 7px;
+    text-align: center;
 }
-.about img{
+
+.about img {
     max-width: 200px;
     border-radius: 50%;
     margin: 50px;
-    /* border: 5px dotted var(--color-second);
-    outline: 8px dotted var(--color-second); */
-  
-  
 }
 
-
-.about p{
+.about p {
     max-width: 600px;
     text-align: center;
     color: black;
     font-weight: 800;
 }
-.about span{
+
+.about span {
     color: #ec6d86;
 }
+
 /*    Proyects     */
-.proyects{
+.proyects {
     background-color: white;
     padding: 50px;
     color: black;
     display: flex;
     flex-direction: column;
     align-items: center;
-    
+
 }
-.proyects h2{
+
+.proyects h2 {
     text-align: center;
     color: #0F172A;
     font-family: 'Roboto Slab', serif;
     letter-spacing: 7px;
-    
+
 }
-.proyect{
+
+.proyect {
     margin: 30px;
     font-family: 'Lato', sans-serif;
     max-width: 600px;
-  padding: 20px;
-  border-radius: 16px;
-  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
-  
- 
+    padding: 20px;
+    border-radius: 16px;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
 
-}
-.proyect img{
-  height: 250px;
-  width: 450px;
-  object-fit: cover;
-}
-.proyect a{
-
- text-decoration: none;
- color: #ffffff;  
- 
 
 
 }
-.proyect .options{
+
+.proyect img {
+    height: 250px;
+    width: 450px;
+    object-fit: cover;
+}
+
+.proyect a {
+
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.proyect .options {
     display: flex;
-    /* flex-direction: row; */
     justify-content: space-between;
-   
+
 }
 
-.options div{
-  
+.options div {
+
     display: flex;
     justify-content: center;
     align-items: center;
-    
+
 }
-.proyect ul{
+
+.proyect ul {
     padding: 0px;
     list-style: none;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-   
-   
-   
+
+
+
 }
-.proyect .options a{
-    padding:5px 20px;
-   
+
+.proyect .options a {
+    padding: 5px 20px;
+
     color: var(--color-main);
     border: 1px solid gray;
     border-radius: 16px;
@@ -242,14 +256,16 @@ nav a:active{
     -webkit-transition: ease-out 0.4s;
     -moz-transition: ease-out 0.4s;
     transition: ease-out 0.4s;
-   
-  }
-.options a:hover{
+
+}
+
+.options a:hover {
     background-color: #ec6d86;
     color: white;
     border-color: #ec6d86;
 }
-.proyect li{
+
+.proyect li {
     padding: 5px 20px;
     margin-left: 5px;
     background-color: var(--color-threth);
@@ -262,7 +278,7 @@ nav a:active{
 }
 
 /*     Contact     */
-.contact{
+.contact {
     height: 80vh;
     background-color: var(--color-main);
     display: flex;
@@ -271,18 +287,21 @@ nav a:active{
     justify-content: center;
     font-family: 'Roboto Slab', serif;
 }
-.contact i{
+
+.contact i {
     font-size: 50px;
-   height: 50px;
-   width: auto;
-   
+    height: 50px;
+    width: auto;
+
 }
-.contact h2{
-  
+
+.contact h2 {
+
     letter-spacing: 7px;
-   
+
 }
-.contact a{
+
+.contact a {
     text-decoration: none;
     color: #ec6d86;
     font-weight: 800;
@@ -294,16 +313,17 @@ nav a:active{
     -webkit-transition: ease-out 0.4s;
     -moz-transition: ease-out 0.4s;
     transition: ease-out 0.4s;
-    
+
 }
-.contact a:hover{
+
+.contact a:hover {
     background-color: #ec6d86;
     color: white;
 }
 
 /*     Footer     */
-footer{
-    background-color:white;
+footer {
+    background-color: white;
     height: 30vh;
     display: flex;
     flex-direction: column;
@@ -311,83 +331,130 @@ footer{
     justify-content: center;
     color: black;
 }
-footer div{
+
+footer div {
     padding: 30px;
 }
-footer a{
-   
+
+footer a {
+
     text-decoration: none;
     padding: 10px;
     border: 1px solid var(--color-threth);
     border-radius: 8px;
     display: inline-block;
 }
-footer i{
-    
-    color:var(--color-threth)!important;
+
+footer i {
+
+    color: var(--color-threth) !important;
     font-size: 30px;
 }
-footer a:hover{
+
+footer a:hover {
     background-color: var(--color-main);
     border: 1px solid var(--color-main);
-    
+
 }
 
 
 /* Responsive design */
 
 @media screen and (max-width: 768px) {
-    header{
-       display: block;
-       width: 100%;
-      
-        
+    header {
+        display: block;
+       
     }
-    header a{
+
+    header a {
         display: inline;
-       
-       
+
+
     }
-    header .icon-menu{
+
+    header .icon-menu {
         margin: 20px;
         font-size: 23px;
         position: absolute;
         top: 0;
         right: 0;
         display: inline;
-       
-    }
-    header .logo img{
-        
-    }
-    header nav{
-        
-        
-       
-    }
-    header nav.active{
-       margin: 10px;
-    }
-    header nav.inactive{
-        display: none;
-        
-    }
-    header nav a {
-       
-        display: block;
-        text-align: center;
-       
-       
-    }
-    header nav a{
 
     }
-    nav a:hover{
-        background-color:var(--color-threth);
-        border-bottom: 1px solid #ec6d86;
-        color: #ec6d86;
+
+    header nav.active {
+        margin: 10px;
     }
-    nav a:active{
-        background-color: rgb(44, 40, 99);
-       }
+
+    header nav.inactive {
+        display: none;
+
+    }
+
+    header nav a {
+
+        display: block;
+        text-align: center;
+
+    }
+
+    /* Contact */
+    .contact p {
+        max-width: 500px;
+        text-align: center;
+    }
+
+}
+
+/* Responsive design movil*/
+
+@media screen and (max-width: 375px) {
+
+    /* presentacion */
+    .presentacion {
+
+        height: 100vh;
+        background-image: none;
+        background-size: none;
+        background-repeat: none;
+        background-attachment: none;
+        background-color: var(--color-threth);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    .presentacion h1 {
+        text-align: center;
+    }
+
+    .presentacion h2 {
+        text-align: center;
+    }
+
+
+    /*    Proyects     */
+   
+    .proyects h2 {
+        text-align: center;
+    }
+
+    .proyect {
+       
+        max-width: 300px;
+    }
+
+    .proyect img {
+        height: 250px;
+        width: 250px;
+        object-fit: cover;
+    }
+
+ /* Contact */
+    .contact p {
+        max-width: 200px;
+        text-align: center;
+    }
 }
