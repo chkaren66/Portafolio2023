@@ -36,7 +36,9 @@ header a {
 header .icon-menu {
     display: none;
 }
-
+header .icon-close{
+    display: none;
+}
 header .logo img {
     width: 40px;
 }
@@ -359,6 +361,11 @@ footer a:hover {
     border: 1px solid var(--color-main);
 
 }
+footer {
+    color: var(--color-main);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 10px;
+}
 
 
 /* Responsive design */
@@ -384,7 +391,7 @@ footer a:hover {
         display: inline;
 
     }
-
+   
     header nav.active {
         margin: 10px;
     }
@@ -400,7 +407,17 @@ footer a:hover {
         text-align: center;
 
     }
-
+    header .icon-close.aparecer{
+        margin: 20px;
+        font-size: 23px;
+        position: absolute;
+        top: 0;
+        right: 0;
+        display: inline;
+    }
+    header .icon-close.desaparecer{
+        display: none;
+    }
     /* presentacion */
     .presentacion h1 {
         text-align: center;
@@ -485,6 +502,9 @@ footer a:hover {
     }
 
     /* Contact */
+    .contact{
+        height: 50vh;
+    }
     .contact p {
         max-width: 200px;
         text-align: center;
