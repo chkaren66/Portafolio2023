@@ -75,9 +75,10 @@ nav a:active {
 
 }
 
-.presentacion h1 {
+.presentacion h1 span {
     color: #0F172A;
     font-size: 60px;
+    text-align: center;
     font-family: 'Roboto Slab', serif;
     letter-spacing: 6px;
     text-shadow: 2px 2px 3px white;
@@ -85,10 +86,12 @@ nav a:active {
 
 }
 
+
 .presentacion h2 {
     font-size: 20px;
     font-family: 'Lato', sans-serif;
     letter-spacing: 5px;
+    text-align: center;
 }
 
 /*     About me      */
@@ -396,6 +399,14 @@ footer a:hover {
         display: block;
         text-align: center;
 
+    }
+    /* presentacion */
+    .presentacion h1 {
+        text-align: center;
+    }
+
+    .presentacion h2 {
+        text-align: center;
     }
 
     /* Contact */
