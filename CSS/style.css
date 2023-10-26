@@ -17,7 +17,7 @@ main {
 }
 
 header {
-    
+
     font-family: 'Lato', sans-serif;
     padding: 20px 30px;
     background-color: var(--color-threth);
@@ -61,7 +61,7 @@ nav a:active {
 
 /*    Section presentacion */
 .presentacion {
-   
+
     height: 100vh;
     background-image: url(/Images/imagen-paisaje.png);
     background-size: cover;
@@ -212,7 +212,7 @@ nav a:active {
 
 .proyect img {
     height: 250px;
-    width: 450px;
+    width: 100%;
     object-fit: cover;
 }
 
@@ -366,7 +366,7 @@ footer a:hover {
 @media screen and (max-width: 768px) {
     header {
         display: block;
-       
+
     }
 
     header a {
@@ -400,6 +400,7 @@ footer a:hover {
         text-align: center;
 
     }
+
     /* presentacion */
     .presentacion h1 {
         text-align: center;
@@ -411,18 +412,15 @@ footer a:hover {
 
     /* Proyectos */
     .proyect {
-       
+
         max-width: 400px;
     }
 
-    .proyect img {
-        height: 250px;
-        width: 390px;
-        object-fit: cover;
-    }
-    .proyect li{
+
+    .proyect li {
         margin: 5px;
     }
+
     /* Contact */
     .contact p {
         max-width: 500px;
@@ -462,26 +460,83 @@ footer a:hover {
 
 
     /*    Proyects     */
-   
+
     .proyects h2 {
         text-align: center;
     }
 
     .proyect {
-       
+
         max-width: 300px;
+        margin: 20px 0px;
     }
 
-    .proyect img {
-        height: 250px;
-        width: 250px;
-        object-fit: cover;
-    }
-    .proyect li{
+
+    .proyect li {
         margin: 5px;
     }
 
- /* Contact */
+    .proyect .options {
+        display: block;
+        justify-content: none;
+       
+
+    }
+
+    .options div {
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+      
+    }
+
+    .proyect ul {
+        padding: 0px;
+        list-style: none;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+
+
+
+    }
+
+    .proyect .options a {
+        padding: 5px 20px;
+
+        color: var(--color-main);
+        border: 1px solid gray;
+        border-radius: 16px;
+        color: gray;
+        font-weight: 700;
+        cursor: pointer;
+        -webkit-transition: ease-out 0.4s;
+        -moz-transition: ease-out 0.4s;
+        transition: ease-out 0.4s;
+
+    }
+
+    .options a:hover {
+        background-color: #ec6d86;
+        color: white;
+        border-color: #ec6d86;
+    }
+
+    .proyect li {
+        padding: 5px 20px;
+        margin-left: 5px;
+        background-color: var(--color-threth);
+        opacity: 0.8;
+        border: 1px solid var(--color-threth);
+        border-radius: 16px;
+        color: #f34366;
+        font-weight: 700;
+        font-size: 12px;
+    }
+
+    /* Contact */
     .contact p {
         max-width: 200px;
         text-align: center;
